@@ -1,47 +1,130 @@
-<!DOCTYPE html>
-<title> ICT CLUB
-</title>
+<html>
+<head>
+<title>ICT CLUB</title>
 <style>
-    body{
-        background-image: url("https://i.ibb.co/FqmndhwS/futuristic-technological-core-stockcake.jpg");
-background-size: cover;
-background-attachment:fixed;
-font-family: arial;
-text-align: center;
-color: white;
-margin: 0%;
-    }
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("https://i.ibb.co/ynfCyvVW/DRl-DQdb.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+
 .header{
-    background-color: rgb(0,56,168, 0.9);
-    padding: 20px;
-    animation: ;
+    background: linear-gradient(90deg, blue, purple);
+    text-align: center;
+    padding: 40px;
+    animation: fadeIn 2s;
 }
-@keyframes slideDown{
-    from{transform: translate(-100px);}
-    to{transform: translate(0);}
+@keyframes fadeIn{
+    from{opacity: 0; transform: translateY(-30px);}
+    to{opacity: 1; transform: translateY(0);}
 }
-h1{
-    font-size: 40px;
-    text-shadow: 20px 2px 5px black;
+.header h1{
+    font-size: 60px;
+    animation: glow 10s infinite; 
+    
+    /* CREATED BY MERCURIO */
 }
- .nav a{
+@keyframes glow{
+    0%,100%{text-shadow: 3px 3px 10px Pink orange;}
+    80%{text-shadow: 3px 3px 30px #ffcc00;}
+}
+.nav{
+    text-align: center;
+    margin: 30px;
+}
+.nav a{
     text-decoration: none;
     color: white;
-    background-color:blue;
-    padding:15px 25px ;
-    margin: 10px;
-    border-radius: 8px;
+    background: linear-gradient(90deg, Purple, blue);
+    padding: 18px 35px;
+    margin: 15px;
+    border-radius: 50px;
     display: inline-block;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    transition: 0.4s;
- }
- .nav a:hover{
-    background-color:#ffcc00 ;
-    color:black;
-    transform:scale(1.15);
- }
-.box a{
-    background-color: lightskyblue;
-    width:70;   
-}   
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: 0.4s ease; 
+}
+.nav a:hover{
+    background: linear-gradient(90deg, blue, purple);
+    color: black;
+    transform: scale(1.15) rotate(-2deg);
+    box-shadow: 0 8px 25px rgba(255,204,0,0.5);
+}
+
+/* CONTENT BOX */
+.container{
+    background: rgba(0,0,0,0.75);
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #0038a8;
+    transition: 0.5s; 
+    
+    /* CREATED BY MERCUIO*/
+}
+.container:hover{
+    transform: translateY(-10px); 
+    border-color: #ffcc00;
+}
+h2{
+    color: #ffcc00;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,56,168,0.9);
+    margin-top: 50px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>ICT CLUB</h1>
+    
+</div>
+
+<div class="nav">
+    <a href="club.html">🏠 HOME</a>
+    <a href="activities.html">📸 ACTIVITIES / GALLERY</a>
+    <a href="officers.html">👥 OFFICERS</a>
+</div>
+
+<div class="container">
+    <h2>WELCOME TO OUR CLUB!</h2>
+    <p>We are the ICT Club of Stand alone. Our goal is to learn technology, 
+    improve our coding skills, and create projects that can help others. 
+    Join us and be part of the future!</p>
+</div>
+
+<div class="container">
+    <h2>WHAT WE DO</h2>
+    <p>✓ Web Designing <br>
+       ✓ Coding and Programming <br>
+       ✓ Tech Seminars <br>
+       ✓ Digital Projects</p>
+</div>
+
+<div class="footer">
+    <p>© 2026 ICT Club All Rights Reserved.</p>
+</div>
+
+</body>
+</html>
