@@ -14,12 +14,11 @@ body{
     color: white;
 }
 
-
 .header{
     background: linear-gradient(90deg, blue, purple);
     text-align: center;
     padding: 40px;
-  animation-delay: 4s;
+    animation: fadeIn 2s; 
 }
 @keyframes fadeIn{
     from{opacity: 0; transform: translateY(-30px);}
@@ -35,6 +34,7 @@ body{
     0%,100%{text-shadow: 3px 3px 10px Pink orange;}
     80%{text-shadow: 3px 3px 30px #ffcc00;}
 }
+
 .nav{
     text-align: center;
     margin: 30px;
@@ -55,10 +55,9 @@ body{
 .nav a:hover{
     background: linear-gradient(90deg, blue, purple);
     color: black;
-    transform: scale(1.15) rotate(-2deg);
+    transform: scale(1.15) rotate(-2deg); 
     box-shadow: 0 8px 25px rgba(255,204,0,0.5);
 }
-
 
 .container{
     background: rgba(0,0,0,0.75);
@@ -69,14 +68,14 @@ body{
     border: 2px solid #0038a8;
     transition: 0.5s; 
     
-    /* CREATED BY MERCUIO*/
+
 }
 .container:hover{
     transform: translateY(-10px); 
     border-color: #ffcc00;
 }
 h2{
-    color:aquamarine;
+    color: #ffcc00;
     font-size: 30px;
     margin-bottom: 15px;
 }
